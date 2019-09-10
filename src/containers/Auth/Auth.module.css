@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Satisfy';
+    
+}
+
+.container {
+    margin-top: 20px;
+    height: 100%;
+    align-content: center;
+    
+}
+
+.showLoginForm {
+    display: show;
+}
+
+.transform {
+   transform: translateY(-100vh);
+   margin-bottom: 100%;
+}
+
+
+
+.card {
+  
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardToggle {
+  
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* font-family: 'Satisfy', "Fjalla One"; */
+}
+
+
+
+/* .social_icon span {
+    font-size: 60px;
+    margin-left: 100px;
+    color: #FFC312;
+}
+
+.social_icon span:hover {
+    color: white;
+    cursor: pointer;
+} */
+
+.cardHeader h3 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Satisfy', "Fjalla One";
+    /* font-family: "Indie Flower"; */
+}
+
+.social_icon {
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.InputGroupPrepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0;
+    border-radius: 0px; 
+    
+}
+
+.InputGroupPrepend img {
+    height: 10%;
+}
+
+input:focus {
+    outline: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+}
+
+.remember {
+    color: rgb(236, 234, 234);
+
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.loginBtn {
+    font-family: 'Satisfy', "Fjalla One";
+    color: black;
+    background-color: yellow;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 0px;
+    
+}
+
+.loginBtn:hover {
+    
+    color: black;
+    background-color: white;
+}
+
+.links {
+     /* margin: 20px;  */
+     color: white;
+     
+}
+
+.links a {
+    margin-left: 4px;
+    
+}
+
+
+/*
+li.links{
+    background-color: red;
+} */
+
+.below {
+    margin-top: -10%;
+}  
+
+
+
+.containerMain {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+  }
+
+ 
+  
+  .bottomLeft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .topLeft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .topRight {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  .CarsList {
+    border: 1px solid black;
+    height: 580px;
+    overflow: auto;
+ }
+ 
+ .BorderGroove {
+    border-style: ridge;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.9px 1.9px; 
+ }
+ 
+ 
+ 
+ .CarsList hr{
+    border-top: 2px solid rgb(223, 81, 15);
+ }
+ 
+ .CarsList button :hover{
+    background-color: rgb(185, 185, 185);
+ }
+  
+  .bottomRight {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  @media only screen and (max-width: 575px) {
+      .centered {
+        top: 45%;
+        left: 200px;
+        height: 300px;
+      }
+
+
+     .zIndex {
+         z-index: 200;
+     }
+     /* .card {
+         width:200px;
+       height: 300px;
+     } */
+
+     .cardToggle {
+        width:100%;
+      height: 300px;
+     
+    }
+
+     .transform {
+        transform: translateY(0);
+        
+     }
+
+     .showLoginForm {
+        display: none;
+    }
+
+     .links {
+        margin: 1px; 
+        color: white;
+   }
+
+   .loginBtn {
+       height: 35px;
+       margin-bottom:10px; 
+   }
+
+
+   
+  }
+
+
+
+
+

@@ -1,0 +1,49 @@
+.CarsList {
+  height: 380px;
+  width: 100%;
+}
+
+.BorderGroove {
+  border-style: ridge;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1.9px 1.9px;
+}
+
+.LineThrough {
+  text-decoration-line: line-through;
+}
+
+.CarsList hr {
+  border-top: 2px solid rgba(15, 6, 6, 0.897);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.733);
+  overflow: auto;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.9;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.TextCardSale {
+  color: red;
+  font-weight: bold;
+
+}
+
+

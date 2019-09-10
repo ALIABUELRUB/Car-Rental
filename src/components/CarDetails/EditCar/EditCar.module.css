@@ -1,0 +1,58 @@
+.editCar {
+	float: right;
+	/* margin-right: 60px; */
+	outline: none;
+	width: 90px;
+	height: 35px;
+	margin-top: 10px;
+	margin-right: 4px;
+	top: 10px;
+	right: 17px;
+  }
+
+  .SnackBar {
+	width:"150px";
+	 margin: "auto";
+	 margin-top: "20px";
+	 margin-right:"0";
+}
+
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+  }
+
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+
+  .container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }	
+
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+	   top: 9px;
+	  left: 9px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background: white;
+  }

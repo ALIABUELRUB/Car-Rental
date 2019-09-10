@@ -1,0 +1,41 @@
+    .modalHeader {
+         height: 60px;
+    }
+
+    .floatTotalPrice {
+        float: right;
+       margin-top: 4px;
+    }
+
+    .SnackBar {
+        width:"150px";
+         margin: "auto";
+         margin-top: "20px";
+         margin-right:"0";
+    }
+
+  
+@media (max-width: 216px) {
+
+    .modalHeader {
+        height: 140px;
+    }
+
+    .dateWidth {
+        width: 110%;
+    }
+
+    .floatTotalPrice {
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .SnackBar {
+        width:"10px";
+       
+    }
+
+}

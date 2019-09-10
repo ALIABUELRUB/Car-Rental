@@ -1,0 +1,11 @@
+.deleteCar {
+	float: right;
+	/* margin-right: 60px; */
+	outline: none;
+	width: 90px;
+	height: 35px;
+	margin-top: 10px;
+	margin-right: 4px;
+	top: 10px;
+	right: 17px;
+  }

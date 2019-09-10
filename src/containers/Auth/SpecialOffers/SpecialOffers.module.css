@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+}
+
+.containerCarousel {
+  position: relative;
+}
+
+.textBlock {
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  font-family: 'Satisfy', "Fjalla One";
+}
+
+.TopLeft {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  background-color: orange;
+  color: white;
+  height: 24px;
+  border: 1px solid orange;
+}
+
+.textBlockCarousel {
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Satisfy', "Fjalla One";
+}
+
+.TopLeftCarousel {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  background-color: orange;
+  color: white;
+  height: 29px;
+  border: 1px solid orange;
+}
+
+.containerCarousel:hover img {
+  transform: scale(1.2);
+}

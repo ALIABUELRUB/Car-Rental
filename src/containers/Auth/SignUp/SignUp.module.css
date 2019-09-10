@@ -1,0 +1,215 @@
+
+* {
+    font-family: 'Roboto';
+}
+
+.signupButton {
+  font-family: 'Satisfy', "Fjalla One";
+  font-size: 16px;
+}
+
+.container {
+    margin-top: 20px;
+    height: 100%;
+    align-content: center;
+    
+}
+
+.showLoginForm {
+    display: show;
+}
+
+.transform {
+   transform: translateY(-100vh);
+   margin-bottom: 100%;
+}
+
+
+
+.card {
+  
+    height: 390px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+
+.cardToggle {
+  
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+
+
+.cardHeader h3 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Satisfy', "Fjalla One", 'Roboto';
+  
+}
+
+
+
+
+
+
+input:focus {
+    outline: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+}
+
+
+.loginBtn {
+    font-family: 'Satisfy', "Fjalla One";
+    color: black;
+    background-color: yellow;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 0px;
+    
+}
+
+.loginBtn:hover {
+    
+    color: black;
+    background-color: white;
+}
+
+.links {
+     /* margin: 20px;  */
+     color: white;
+     
+}
+
+.links a {
+    margin-left: 4px;
+    
+}
+
+
+
+
+.below {
+    margin-top: -10%;
+}  
+
+
+
+.containerMain {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+    
+  }
+
+ 
+  
+  .bottomLeft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .topLeft {
+    position: absolute;
+    top: -250px;
+    left: -90px;
+  }
+  
+  .topRight {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  .CarsList {
+    border: 1px solid black;
+    height: 580px;
+    overflow: auto;
+ }
+ 
+ .BorderGroove {
+    border-style: ridge;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.9px 1.9px; 
+ }
+ 
+ 
+ 
+ .CarsList hr{
+    border-top: 2px solid rgb(223, 81, 15);
+ }
+ 
+ .CarsList button :hover{
+    background-color: rgb(185, 185, 185);
+ }
+  
+  .bottomRight {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  .loading {
+    color: white;
+     top: 50%;
+     transform: translateY(-50%);
+    position: absolute;
+    margin-left: 16%;
+  }
+
+  @media only screen and (max-width: 575px) {
+      .centered {
+        top: 100px;
+        left: 50%;
+      width: 95%;
+      }
+
+ 
+
+     .cardToggle {
+        width:96%;
+      height: 390px;
+      
+    }
+
+     .transform {
+        transform: translateY(0);
+        
+     }
+
+     .showLoginForm {
+        display: none;
+    }
+
+     .links {
+        margin: 1px; 
+        color: white;
+   }
+
+   .loginBtn {
+       height: 25px;
+       margin-bottom:10px; 
+   }
+
+   
+  }
+
+
