@@ -18,10 +18,10 @@ import rentCarReducer from './store/reducers/rentCarReducer'
 import deleteCarReducer from './store/reducers/deleteCarReducer'
 import editCarReducer from './store/reducers/editCarReducer'
 
-const composeEnhancers =
-  process.env.NODE_ENV === 'development'
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    : null || compose
+let composeEnhancers = compose
+if (process.env.NODE_ENV === 'development' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
+  composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+}
 
 const rootReducer = combineReducers({
   authReducer: authReducer,
@@ -36,13 +36,13 @@ const rootReducer = combineReducers({
 
 export const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(thunk))
+  composeEnhancers(applyMiddleware(thunk)),
 )
 
 const app = (
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App/>
     </BrowserRouter>
   </Provider>
 )
