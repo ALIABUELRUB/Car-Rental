@@ -49,7 +49,7 @@ class App extends Component {
         <Route path="/" exact component={Signin} />
       </Switch>
     )
-
+//////
     if (this.props.isAuthorized) {
       routes = (
         <Navigationbar>
