@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cypress/code-coverage": "^1.10.1",
     "@material-ui/core": "^4.3.2",
     "@material/react-snackbar": "^0.15.0",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "bootstrap3": "^3.3.5",
     "firebase": "^6.4.0",
+    "istanbul-lib-coverage": "^2.0.5",
     "mdbreact": "^4.19.0",
+    "nyc": "^14.1.1",
     "pure-react-carousel": "^1.21.2",
     "react": "^16.9.0",
+    "react-alice-carousel": "^1.15.2",
     "react-bootstrap": "^1.0.0-beta.11",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.0",
@@ -25,15 +29,17 @@
     "redux": "^4.0.4",
     "redux-firestore": "^0.8.0",
     "redux-thunk": "^2.3.0",
-    "react-alice-carousel": "^1.15.2",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:code-coverage": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write src/**/*.js"
+    "format": "prettier --write src/**/*.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +57,8 @@
     ]
   },
   "devDependencies": {
+    "@cypress/instrument-cra": "^1.0.0",
+    "cypress": "^3.4.1",
     "prettier": "1.18.2"
   }
 }

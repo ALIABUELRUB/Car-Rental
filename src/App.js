@@ -4,48 +4,23 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { Route, Redirect, Switch } from 'react-router-dom'
-// import asyncComponent from './hoc/asyncComponent/asyncComponent';
-
 import Navigationbar from './components/NavigationBar/NavigationBar'
-// import CarDetails from './components/CarDetails/CarDetails';
 import Logout from './containers/Auth/Logout/Logout'
 import Signin from './containers/Auth/Auth'
 import * as actions from './store/actions/index'
 import { post } from './httpService/httpService'
-
-// const asyncSignUp = asyncComponent(() => {
-//   return import('./containers/Auth/SignUp/SignUp');
-// })
-
 const asyncSignUp = React.lazy(() => import('./containers/Auth/SignUp/SignUp'))
-
-// const asyncHistory = asyncComponent(() => {
-//   return import('./components/History/History');
-// })
-
 const asyncHistory = React.lazy(() => import('./components/History/History'))
-
-// const asyncCarsListContainer= asyncComponent(() => {
-//   return import('./components/CarsList/CarsListContainer');
-// })
-
 const asyncCarsListContainer = React.lazy(() =>
   import('./components/CarsList/CarsListContainer')
 )
-
-// const asyncCarDetails= asyncComponent(() => {
-//   return import('./components/CarDetails/CarDetails');
-// })
-
 const asyncCarDetails = React.lazy(() =>
   import('./components/CarDetails/CarDetails')
 )
-
 class App extends Component {
   componentDidMount = () => {
     this.props.onTryAutoSignup()
   }
-
   componentDidUpdate = () => {
     console.log(localStorage.getItem('token') + ' :token')
     if (
@@ -59,26 +34,23 @@ class App extends Component {
           'lastName'
         )}`,
       }
-
       post('/UserInfo.json', userInfo)
         .then(response => localStorage.removeItem('imgName'))
         .catch(err => console.log(err))
     }
   }
-
   render() {
     let isAdmin = null
     if (localStorage.getItem('email') === 'admin@admin.com') {
       isAdmin = 'admin'
     }
-
     let routes = (
       <Switch>
         <Route path="/SignUp" exact component={asyncSignUp} />
         <Route path="/" exact component={Signin} />
       </Switch>
     )
-
+//////
     if (this.props.isAuthorized) {
       routes = (
         <Navigationbar>
