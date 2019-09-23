@@ -29,6 +29,7 @@ class Login extends Component {
   }
 
   handleChange = e => {
+    e.preventDefault();
     this.setState({
       [e.target.id]: e.target.value,
     })
@@ -208,7 +209,7 @@ class Login extends Component {
             ].join(' ')}
           >
             <div className={'d-flex justify-content-center h-100'}>
-              <div className={classes.card}>{form}</div>
+              <div className={classes.card} data-test='login-form'>{form}</div>
             </div>
           </div>
         </div>
